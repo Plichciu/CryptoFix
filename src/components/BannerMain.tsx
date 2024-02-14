@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazy-load'
 import coinsImg from '../images/coinsImg.png'
 import coinImgMobile from '../images/coinsImgMobile.png'
 
@@ -15,17 +16,20 @@ const BannerMain = () => {
 							<span className="text-mainColor">Succeed!</span>
 						</h2>
 					</div>
-
-					<img
-						src={coinsImg}
-						alt="Coins with bitcoin logo"
-						className=" mb-10  lg:h-44 hidden lg:block"
-					/>
-					<img
-						src={coinImgMobile}
-						alt="Coins with bitcoin logo"
-						className="h-48  mb-10 max-[550px]:h-32 max-[390px]:h-24 lg:h-44 block lg:hidden"
-					/>
+					<LazyLoad>
+						<img
+							src={coinsImg}
+							alt="Coins with bitcoin logo"
+							className=" mb-10  lg:h-44 hidden lg:block"
+						/>
+					</LazyLoad>
+					<LazyLoad>
+						<img
+							src={coinImgMobile}
+							alt="Coins with bitcoin logo"
+							className="h-48  mb-10 max-[550px]:h-32 max-[390px]:h-24 lg:h-44 block lg:hidden"
+						/>
+					</LazyLoad>
 				</div>
 			</div>
 		</div>
