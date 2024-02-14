@@ -1,4 +1,5 @@
 import coinsImg from '../images/coinsImg.png'
+import coinImgMobile from '../images/coinsImgMobile.png'
 
 const BannerMain = () => {
 	return (
@@ -18,8 +19,9 @@ const BannerMain = () => {
 					<img
 						src={coinsImg}
 						alt="Coins with bitcoin logo"
-						className="h-48 block mb-10 max-[450px]:h-28 lg:h-44 "
+						className=" mb-10  lg:h-44 hidden lg:block"
 					/>
+					<img src={coinImgMobile} alt="Coins with bitcoin logo"  className='h-48  mb-10 max-[550px]:h-32 max-[395px]:h-24 lg:h-44 block lg:hidden'/>
 				</div>
 			</div>
 		</div>
