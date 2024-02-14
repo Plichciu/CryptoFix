@@ -21,11 +21,10 @@ const BannerMain = () => {
 						alt="Coins with bitcoin logo"
 						className=" mb-10  lg:h-44 hidden lg:block"
 					/>
-					<LazyLoadImage
-						src={coinImgMobile}
+					
+					<img rel='preload' src={coinImgMobile}
 						alt="Coins with bitcoin logo"
-						className="h-48  mb-10 max-[550px]:h-32 max-[390px]:h-24 lg:h-44 block lg:hidden"
-					/>
+						className="h-48  mb-10 max-[550px]:h-32 max-[390px]:h-24 lg:h-44 block lg:hidden"/>
 				</div>
 			</div>
 		</div>
