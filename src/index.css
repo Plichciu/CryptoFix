@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.chart {
+  
+    overflow: auto;
+}
+
+#lineChart {
+    width: 100% !important;
+    height: 100% !important;
+  
+}

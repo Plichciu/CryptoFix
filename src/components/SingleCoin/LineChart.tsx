@@ -54,9 +54,6 @@ const LineChart = ({ period, historyPrice, singleCoinData }: LineChartInterfaceP
 		responsive: true,
 		scales: {
 			y: {
-				// grid: {
-				// 	display: false,
-				// },
 				ticks: {
 					min: 0,
 					max: 4,
@@ -70,7 +67,6 @@ const LineChart = ({ period, historyPrice, singleCoinData }: LineChartInterfaceP
 			x: {
 				grid: {
 					display: false,
-				
 				},
 				title: {
 					font: {
@@ -87,7 +83,11 @@ const LineChart = ({ period, historyPrice, singleCoinData }: LineChartInterfaceP
 		},
 	}
 
-	return <Line data={data} options={options} />
+	return (
+		<div className="chart">
+			<Line id="lineChart" data={data} options={options} />
+		</div>
+	)
 }
 
 export default LineChart

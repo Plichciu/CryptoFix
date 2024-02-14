@@ -12,12 +12,14 @@ const SingleCoinRight = ({
 	const { fiatCurrency } = useContext(CryptoContext)
 	return (
 		<div className="basis-[60%]">
-			<div className="chart px-5 lg:px-0">
-				<LineChart
-					period={period}
-					historyPrice={historyPrice}
-					singleCoinData={singleCoinData}
-				/>
+			<div className="px-5 lg:px-0">
+				<div className="grid">
+					<LineChart
+						period={period}
+						historyPrice={historyPrice}
+						singleCoinData={singleCoinData}
+					/>
+				</div>
 				<div className="bg-colorBgc mb-10 mt-2 p-3 rounded-md">
 					<ul className="w-full flex justify-between menu menu-horizontal">
 						<li className="w-[30%] max-w-24 md:max-w-36">
