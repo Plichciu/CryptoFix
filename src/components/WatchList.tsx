@@ -1,15 +1,14 @@
-import  { useContext } from 'react'
+import { useContext } from 'react'
 import { IoClose } from 'react-icons/io5'
 import { CryptoContext } from '../App'
 import { useNavigate } from 'react-router-dom'
 
 const WatchList = () => {
-	const {watchList, setWatchList } = useContext(CryptoContext)
+	const { watchList, setWatchList } = useContext(CryptoContext)
 	const navigate = useNavigate()
 
 	const deleteCoin = (e: React.MouseEvent, id: string) => {
 		e.stopPropagation()
-		console.log(id)
 		const newWatchList = watchList.filter(coin => coin.uuid !== id)
 		setWatchList(newWatchList)
 	}
@@ -18,8 +17,6 @@ const WatchList = () => {
 		navigate(`/coin/${id}`)
 	}
 
-	console.log(watchList)
-	//
 	return (
 		<div>
 			<h3 className="text-center text-lg">Watchlist</h3>
@@ -37,7 +34,6 @@ const WatchList = () => {
 									className="my-3 bg-colorBgc shadow-sm shadow-neutral-200 shadow-solid">
 									<label htmlFor="my-drawer" aria-label="close sidebar">
 										<img src={coin.iconUrl} alt={coin.name} className="h-5" />
-
 										<p>{coin.name}</p>
 										<p
 											className={

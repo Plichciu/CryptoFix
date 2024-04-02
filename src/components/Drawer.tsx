@@ -1,4 +1,4 @@
-import  { useContext } from 'react'
+import { useContext } from 'react'
 import WatchList from './WatchList'
 import { IoIosArrowBack } from 'react-icons/io'
 import MainLogo from '../images/mainlogoblack.png'
@@ -49,7 +49,6 @@ const Drawer = () => {
 					htmlFor="my-drawer"
 					aria-label="close sidebar"
 					className="drawer-overlay"></label>
-
 				<ul className="menu p-4  w-[80%] sm:w-96 min-h-full bg-base-200 text-base-content ">
 					<li className="">
 						<label
@@ -87,7 +86,6 @@ const Drawer = () => {
 							<img src={MainLogo} alt="Main logo" className="block h-14" />
 						</label>
 					</li>
-
 					<WatchList />
 				</ul>
 			</div>

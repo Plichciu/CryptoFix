@@ -1,7 +1,7 @@
 import { IoWarningOutline } from 'react-icons/io5'
 import { GrStatusGood } from 'react-icons/gr'
 
-const WarningAlert = ({ message }: {message: string}) => {
+const WarningAlert = ({ message }: { message: string }) => {
 	return (
 		<div
 			role="alert"
@@ -15,7 +15,6 @@ const WarningAlert = ({ message }: {message: string}) => {
 					<IoWarningOutline className="text-white" />
 				)}
 			</span>
-
 			<span className="text-white">{message}</span>
 		</div>
 	)

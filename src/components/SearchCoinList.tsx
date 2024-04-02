@@ -3,8 +3,7 @@ import { CryptoContext } from '../App'
 import SingleSearchCoin from './SingleSearchCoin'
 
 const SearchCoinList = () => {
-	const {emptySearchList} =
-		useContext(CryptoContext)
+	const { emptySearchList } = useContext(CryptoContext)
 
 	return (
 		<div className="overflow-x-auto max-w-[1400px] mx-auto">

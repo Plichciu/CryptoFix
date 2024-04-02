@@ -89,7 +89,6 @@ const SingleCoinLeft = ({
 								</span>
 							</p>
 						</div>
-
 						<div className="bg-[#F2F2F7] px-4 py-2 rounded-sm shadow-sm shadow-neutral-300">
 							<p>
 								Circulating supply:{' '}
@@ -98,7 +97,6 @@ const SingleCoinLeft = ({
 								</span>
 							</p>
 						</div>
-
 						<div className="bg-[#F2F2F7] px-4 py-2 rounded-sm shadow-sm shadow-neutral-300">
 							<p>
 								Volume 24h:{' '}

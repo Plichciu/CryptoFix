@@ -1,4 +1,4 @@
-import { useContext} from 'react'
+import { useContext } from 'react'
 import mainlogo from '../images/mainlogo.png'
 import { CryptoContext } from '../App'
 import { Link } from 'react-router-dom'
@@ -56,7 +56,6 @@ const NavBar = () => {
 						</ul>
 					</div>
 				</div>
-
 				<Link to="/" className="" onClick={() => setInputValue('')}>
 					<img className="h-8" src={mainlogo} alt="logo cryptofix" />
 				</Link>

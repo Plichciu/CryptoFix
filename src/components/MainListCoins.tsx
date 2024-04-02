@@ -11,7 +11,9 @@ const MainListCoins = () => {
 		<>
 			<BannerMain />
 			<div className="overflow-x-auto w-full max-w-[1400px] mx-auto px-3">
-				<h2 className="text-center font-bold text-2xl mb-10 bg-base-200 py-5">Top 50 <span className='text-mainColor'>crypto</span>currencies</h2>
+				<h2 className="text-center font-bold text-2xl mb-10 bg-base-200 py-5">
+					Top 50 <span className="text-mainColor">crypto</span>currencies
+				</h2>
 				<table className="table ">
 					<thead>
 						<tr>
@@ -46,7 +48,6 @@ const MainListCoins = () => {
 											</div>
 										</Link>
 									</td>
-
 									<td className="">
 										<span
 											className={`flex justify-center items-center w-20  bg-colorBgc py-1 rounded-md text-center 
@@ -54,7 +55,6 @@ const MainListCoins = () => {
 											{coin.change} %
 										</span>
 									</td>
-
 									<td className="bg-base-200 w-18 lg:max-w-24">
 										<div className="md:flex justify-between">
 											<p className="mb-1">
@@ -64,13 +64,11 @@ const MainListCoins = () => {
 													<span>{Number(coin.price).toFixed(2)}</span>
 												)}
 											</p>
-
 											<span className=" badge badge-primary text-white badge-sm md:ml-2">
 												{fiatCurrency.symbol}
 											</span>
 										</div>
 									</td>
-
 									<td className="hidden sm:block">
 										<Link onClick={() => setInputValue('')} to={`/coin/${coin.uuid}`}>
 											<button className="btn border-0 btn-sm text-[12px] hover:bg-mainColor hover:text-gray-200">
