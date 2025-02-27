@@ -72,7 +72,9 @@ const SingleCoinLeft = ({
 							<p>
 								Price:{' '}
 								<span className="font-normal">
-									{Number(singleCoinData.price) < 1 ? (
+								{Number(singleCoinData.price) < 0.01 ? (
+										<span>{Number(singleCoinData.price).toFixed(6)}</span>
+									) : Number(singleCoinData.price) < 0.99 ? (
 										<span>{Number(singleCoinData.price).toFixed(4)}</span>
 									) : (
 										<span>{Number(singleCoinData.price).toFixed(2)}</span>
@@ -156,7 +158,9 @@ const SingleCoinLeft = ({
 									</td>
 									<td className="text-center">
 										<p>
-											{Number(singleCoinData.price) < 0.99 ? (
+										{Number(singleCoinData.price) < 0.01 ? (
+												<span>{Number(singleCoinData.price).toFixed(6)}</span>
+											) : Number(singleCoinData.price) < 0.99 ? (
 												<span>{Number(singleCoinData.price).toFixed(4)}</span>
 											) : (
 												<span>{Number(singleCoinData.price).toFixed(2)}</span>

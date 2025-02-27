@@ -117,7 +117,7 @@ const SingleCoin = () => {
 
 	useEffect(() => {
 		getHistoryPriceApi()
-	}, [period, fiatCurrency])
+	}, [period, fiatCurrency, id])
 
 	return (
 		<div>
