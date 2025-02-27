@@ -71,7 +71,19 @@ const SingleCoinRight = ({
 									</td>
 									<td className="text-center">
 										<p>
-											{Number(singleCoinData.allTimeHigh.price).toFixed(2)}
+											{Number(singleCoinData.allTimeHigh.price) < 0.01 ? (
+												<span>
+													{Number(singleCoinData.allTimeHigh.price).toFixed(6)}{' '}
+												</span>
+											) : Number(singleCoinData.allTimeHigh.price) < 0.99 ? (
+												<span>
+													{Number(singleCoinData.allTimeHigh.price).toFixed(4)}{' '}
+												</span>
+											) : (
+												<span>
+													{Number(singleCoinData.allTimeHigh.price).toFixed(2)}{' '}
+												</span>
+											)}
 											{' ' + fiatCurrency.symbol}
 										</p>
 									</td>
